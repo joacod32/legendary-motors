@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Legendary Motorsports - Pago</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="legendary-title">
+      Legendary <span class="motorsport">MOTORSPORT</span>
+    </h1>
+
+    <form action="gracias.html" method="get" autocomplete="off">
+     
+      <label for="auto">Seleccioná el auto</label>
+      <select id="auto" name="auto" required>
+        <option value="">-- Elegí un auto --</option>
+        <option value="Dinka Jester Classic - $790,000">Dinka Jester Classic - $790,000</option>
+        <option value="Overflod Tyrant - $2,515,000">Overflod Tyrant - $2,515,000</option>
+        <option value="Vapid Flash GT - $1,675,000">Vapid Flash GT - $1,675,000</option>
+        <option value="Pegassi Zentorno - $725,000">Pegassi Zentorno - $725,000</option>
+        <option value="Elegy Retro - $904,000">Elegy Retro - $904,000</option>
+        <option value="Maibatsu Penumbra FF - $1,380,000">Maibatsu Penumbra FF - $1,380,000</option>
+      </select>
+
+      
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="solo letras" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" title="Solo letras y espacios" required>
+      
+      <label for="dni">DNI</label>
+      <input type="text" id="dni" name="dni" placeholder="solo numeros" pattern="\d+"  title="Solo números" maxlength="10" required>
+ 
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="solo correo electronico"  title="solo gmail" required>
+      
+      <label for="tarjeta">Número de tarjeta</label>
+      <input type="text" id="tarjeta" name="tarjeta" maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx" title="Debe contener 16 números" pattern="\d{16}" required>
+      
+      <label for="vencimiento">Vencimiento (MM/AA)</label>
+      <input type="text" id="vencimiento" name="vencimiento" placeholder="MM/AA" pattern="(0[1-9]|1[0-2])\/\d{2}" title="solo poner fecha de vencimiento" maxlength="5" required>
+    
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" placeholder="3  dígitos" maxlength="3"  title="Debe contener 3  números" pattern="\d{1,3}" required>
+
+
+      <button type="submit">Confirmar compra</button>
+    </form>
+  </div>
+
+</body>
+</html>
